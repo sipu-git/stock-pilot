@@ -9,7 +9,7 @@ import TransactionDetailsScreen from "../../../features/inventory/screens/Transa
 const Stack = createNativeStackNavigator();
 
 export function DashboardStack() {
-    const { colors } = useAppTheme();
+  const { colors } = useAppTheme();
   return (
     <Stack.Navigator
     >
@@ -17,14 +17,14 @@ export function DashboardStack() {
         name="DashboardHome"
         component={DashboardScreen}
         options={{
-      headerShown: false,
-    }}
+          headerShown: false,
+        }}
       />
 
       <Stack.Screen
-    name="InventoryHistory"
-    component={InventoryHistoryScreen}
-    options={{
+        name="InventoryHistory"
+        component={InventoryHistoryScreen}
+        options={{
           title: "Inventory History",
           headerTitleAlign: "center",
           headerStyle: {
@@ -36,24 +36,24 @@ export function DashboardStack() {
             fontSize: 18,
           },
         }}
-/>
+      />
 
-<Stack.Screen
-  name="TransactionDetails"
-  component={TransactionDetailsScreen}
-  options={{
-    title: "Transaction Details",
-    headerTitleAlign: "center",
-    headerStyle: {
-      backgroundColor: colors.primary,
-    },
-    headerTintColor: colors.onPrimary,
-    headerTitleStyle: {
-      fontWeight: "700",
-      fontSize: 18,
-    },
-  }}
-/>
+      <Stack.Screen
+        name="TransactionDetails"
+        component={TransactionDetailsScreen}
+        options={{
+          title: "Transaction Details",
+          headerTitleAlign: "center",
+          headerStyle: {
+            backgroundColor: colors.primary,
+          },
+          headerTintColor: colors.onPrimary,
+          headerTitleStyle: {
+            fontWeight: "700",
+            fontSize: 18,
+          },
+        }}
+      />
     </Stack.Navigator>
   );
 }

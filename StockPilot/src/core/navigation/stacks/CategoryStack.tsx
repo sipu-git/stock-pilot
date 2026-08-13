@@ -19,6 +19,7 @@ export function CategoryStack() {
         name="CategoryList"
         component={CategoryScreen}
         options={({ navigation }) => ({
+
           header: () => (
             <AppHeader
               title="Categories"

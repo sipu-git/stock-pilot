@@ -6,7 +6,6 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Provider as ReduxProvider } from 'react-redux';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { PaperProvider } from 'react-native-paper';
-
 import { store } from '../store';
 import { queryClient } from '../query/queryClient';
 import { RootNavigator } from '../navigation/RootNavigator';

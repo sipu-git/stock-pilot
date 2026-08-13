@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "StockPilot",
-    "slug": "StockPilot",
+    "slug": "stock-pilot",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,7 +21,8 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.stockpilotsteam.stockpilot"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -29,6 +30,12 @@
     "plugins": [
       "expo-font",
       "expo-secure-store"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2ce9a541-7f4c-4577-9171-cf36c968dc1c"
+      }
+    },
+    "owner": "stockpilots-team"
   }
 }
