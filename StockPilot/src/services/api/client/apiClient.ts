@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 export const apiClient = axios.create({
-  baseURL: 'http://10.59.94.125:4000/api',
+  baseURL: 'https://stock-pilot-4jos.onrender.com/api',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
